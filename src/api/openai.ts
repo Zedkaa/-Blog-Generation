@@ -28,22 +28,3 @@ export const generateBlog = async (
 };
 
 
-
-// import OpenAI from "openai";
-
-// const openai = new OpenAI({
-//   apiKey: "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",
-// });
-
-// const completion = openai.chat.completions.create({
-//   model: "gpt-4o-mini",
-//   store: true,
-//   messages: [
-//     {"role": "user", "content": "write a haiku about ai"},
-//   ],
-// });
-
-// completion.then((result) => console.log(result.choices[0].message));
-
-
-

@@ -59,7 +59,7 @@ function App() {
       if (content !== null) {
         setBlogContent(content);
       } else {
-        setBlogContent(""); // مقدار پیش‌فرض برای جلوگیری از خطا
+        setBlogContent(""); 
       }
     } catch (error) {
       console.error("Error generating blog:", error);
@@ -68,10 +68,6 @@ function App() {
     }
   };
 
-
-  
-  
-  // console.log("API Key:", import.meta.env.VITE_OPENAI_API_KEY);
 
 
   return (
@@ -131,7 +127,7 @@ function App() {
             step={50}
             valueLabelDisplay="auto"
             marks={marks}
-            onChange={(_event, newValue) => setLength(newValue as number)}  
+            onChange={(_event: Event , newValue: number | number[]) => setLength(newValue as number)}  
           />
 
           <Button variant="contained" fullWidth sx={{ mt: 2 }} onClick={handleGenerateBlog}>
